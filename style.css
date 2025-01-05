@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: relative; 
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 12px 16px;
+    font-size: 18px;
+    background-color: #e6f5fb;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    color: #000;
+}
+
+.search-box input::placeholder {
+    color: #777;
+}
+
+.search-box button {
+    width: 46px;
+    height: 46px;
+    background-color: #e6f5fb;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #ababab;
+    color: #fff;
+}
+
+.location-not-found {
+    display: none;
+    text-align: center;
+    color: #777;
+}
+
+.weather-body {
+    display: none;
+    text-align: center;
+}
+
+.weather-img {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.weather-box {
+    margin: 20px 0;
+}
+
+.weather-box .temperature {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.weather-box .description {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #555;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.weather-details .text {
+    margin-left: 10px;
+}
+
+.weather-details span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weather-details p {
+    font-size: 14px;
+    color: #555;
+}
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    z-index: -1; 
+}
+
+
